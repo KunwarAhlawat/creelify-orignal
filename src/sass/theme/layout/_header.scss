@@ -1,34 +1,100 @@
-.header-style1 {
 
-
-    .top-bar {
-        background-color: $primary;
+.navbar{
+    background-color: $primary;
+    color: $light;
+    .navbar-toggler{
+     border: 1px solid $light;
+     color:$light;
+     padding: 5px 10px;
+     box-shadow: none;
+     border-radius: 0;
+     i{
+        margin-right: 4px;
+     }
+     
+}
+    .navbar-brand{
         color: $light;
-        padding: 8px 0px;
-
-        li {
-            list-style: none;
-            display: inline-block;
-            margin-left: 10px;
-        }
-
-        .top-bar-info {
-            a {
-                color: $light;
-
-                i {
-                    margin-right: 4px;
+    }
+    .offcanvas-body{
+      color: $dark;
+  
+        .navbar-nav{
+            align-items: center;
+            .menu-item{
+                a{   
+                  display: block;
+                  color: $light;
+                  padding: 10px 20px;
                 }
             }
-        }
-
-        .top-social-icon {
-            text-align: end;
-
-            a {
+            .header-cta{
+                text-align:center;
+                padding: 4px 8px;
+                background-color: $accent;
                 color: $light;
+                a{
+                    color: $light;
+                }
+                &:hover{
+                    background-color: $light;
+                    a{
+                        color:$dark;
+                    }
+                }
+            }
+            .dropdown {   
+              margin: 0;
+              padding: 0;
+            .dropdown-item{
+            display: block;
+             color: $dark;
+            }
             }
         }
-
     }
+
+    // style for mobile menu
+    @media (max-width: 900px) {
+        .offcanvas-body{
+            padding: 0px 30px;
+            .navbar-nav{
+                display: flex;
+                flex-direction: column;
+                align-items: start;
+                  .menu-item{
+                    margin: 0;
+                    padding: 0;
+
+                    margin-bottom: 10px;
+                      a{   
+                        display: block;
+                        color: $dark;
+                        font-size: 1.2rem;
+                        font-weight: $bold;
+                      }
+                   
+                  }
+                  .header-cta{
+                    width: 100%;
+                    text-align:center;
+                    padding: 10px 20px;
+                    background-color: $accent;
+                    color: $light;
+                    a{
+                        color: $light;
+                    }
+                }
+                  .dropdown {
+                    border: 0;
+                    width: 100%;
+                  .dropdown-item{
+                   color: $dark;
+                  }
+                  }
+              }
+          }
+        
+    }
+    
 }

@@ -1,20 +1,20 @@
 //footer style
-
-
 .footer-area {
     background-color: $primary;
     color: $light;
  .container{
-    padding: 100px 0px;
+    padding: 100px 20px;
     position: relative;
     .footer-logo{
         span{
+            color: $light;
             font-size: 3rem;
         }
         p{
             margin-top: 20px;
         }
     }
+
 
     .footer-item{
         span{
@@ -26,6 +26,9 @@
             color: $light;
             display: block;
             margin:20px 0px;
+            &:hover{
+                color: $accent;
+            }
         }
     }
 
@@ -40,6 +43,11 @@
         align-items: center;
      span{
         font-size: $small-font;
+        a{
+            &:hover{
+                color: $light;
+            }
+        }
      }
 
     }
@@ -57,9 +65,9 @@
 
         i {
             font-size: 1rem;
-
+            color: $light;
             &:hover {
-                color: $secondary;
+                color: $accent;
             }
         }
 
@@ -70,7 +78,8 @@
     width: 100%;
     background-color: $light;
     position: absolute;
-    top:-10%;
+    z-index: 1;
+    top:-13%;
     left:0;
 
    .footer-info-item{
@@ -92,6 +101,7 @@
      span{
         display: block;
         font-size: 1rem;
+        font-weight: $bold;
        
     }
       a{
@@ -105,4 +115,11 @@
    }
 }
 }
+
+    /* Media query for screens below 900px */
+    @media (max-width: 748px) {
+        .container {
+            padding: 280px 20px; 
+        }
+    }
 }
