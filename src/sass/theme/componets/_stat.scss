@@ -1,0 +1,56 @@
+.stat-area {
+    position: relative;
+    background-image: url(https://flywebwp.websitelayout.net/wp-content/uploads/2023/09/bg-01.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 70vh;
+    /* Example height for demonstration */
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        /* Ensure overlay covers the entire container */
+        height: 100%;
+        /* Ensure overlay covers the entire container */
+        background-color: rgba(0, 0, 0, 0.6);
+    }
+
+    .stat-text {
+        position: relative;
+        z-index: 1;
+        color: $light;
+
+        h6 {
+            color: $light;
+            border-bottom: 2px solid $light;
+        }
+    }
+
+    .counter-area {
+        position: relative;
+        z-index: 1;
+        width: 100%;
+        bottom: -20%;
+        background-color: $light;
+        padding: 40px 0px;
+
+        .counter-item {
+            text-align: center;
+
+            span {
+                font-size: 3rem;
+                font-weight: bold;
+                color: $accent;
+            }
+
+            p {
+                text-align: center;
+                font-weight: $bold;
+            }
+        }
+    }
+}
