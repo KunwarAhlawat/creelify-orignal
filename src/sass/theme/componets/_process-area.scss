@@ -8,33 +8,28 @@
     }
 
     .process-item {
-        height: 300px;
         display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: 0px 20px;
-        color: $light;
-        margin: 50px 0px;
+        align-items: start;
+        border: 1px solid $light;
+        padding: 20px;
 
-        .process-item-img {
-            border-radius: 50%;
-            height: 200px;
-            width: 200px;
-            margin-bottom: 20px;
-            border-radius: 50%;
+        .process-item-number {
+            height: max-content;
+            background-color: $light;
+            color: $primary;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 25px 30px;
+            margin-right: 20px;
 
-            img {
-                height: 100%;
-                width: 100%;
-                object-fit: cover;
-                border-radius: 50%;
+            span {
+                font-size: 50px;
+                font-weight: $bold;
             }
+
+
         }
 
-        p {
-            text-align: center;
-            padding: 0px 40px;
-        }
     }
 }

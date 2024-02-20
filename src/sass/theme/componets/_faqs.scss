@@ -1,65 +1,88 @@
-.faq-area {
-    .faq-text {
-        h6 {
-            color: $accent;
-            border-bottom: 3px solid $accent;
-            width: max-content;
-            margin-bottom: 10px;
-        }
-
-        h2 {
-            margin-bottom: 30px;
-        }
+.faq-area .faq-text {
+    h6 {
+        color: $accent;
+        border-bottom: 3px solid $accent;
+        width: max-content;
+        margin-bottom: 10px;
     }
 
-    .accordion-item {
-        margin-bottom: 20px;
-        border: 0;
-        box-shadow: $shadow1;
-        border-radius: 10px;
+    h2 {
+        margin-bottom: 30px;
+    }
+}
 
-        .accordion-header {
-            button {
-                background-color: $light;
-                padding: 10px 20px;
-                border: 0;
-                border-radius: 20px;
-                box-shadow: none;
-                font-size: 1.2rem;
+.accordion-style {
+    .card {
+        background: transparent;
+        box-shadow: 0 0 40px 5px rgba(0, 0, 0, 0.03);
+        border: none;
+        margin-top: 0 !important;
+        border-radius: 0;
+
+        .card-header {
+            border: 0px;
+            padding: 0;
+            border-bottom: none;
+            background: none;
+
+            .btn-link {
+                font-size: $small-font;
+                color: $dark;
+                line-height: 120%;
+                position: relative;
+                border: none;
+                display: block;
+                width: 100%;
+                text-align: left;
+                white-space: normal;
+                border: none;
+                padding: 20px 45px 20px 18px;
                 font-weight: $bold;
-
+                text-decoration: none;
+                background-color: $light;
             }
         }
+
+
+
+        .card-body {
+            font-size: $small-font;
+            padding: 0px 30px 25px 26px;
+            line-height: 24px;
+            text-align: left;
+            border: none;
+            border-left: none;
+            background: $light;
+            border-top: none;
+        }
+    }
+}
+
+
+.faq-area .faq-img {
+    height: 550px;
+    width: 100%;
+    text-align: end;
+    position: relative;
+
+    img {
+        height: 100%;
+        width: 80%;
+        object-fit: cover;
+        transition: width 0.3s ease, height 0.3s ease;
     }
 
-
-    .faq-img {
-        height: 550px;
-        width: 100%;
-        text-align: end;
-        position: relative;
+    .faq-img-2 {
+        position: absolute;
+        top: 100px;
+        left: 70px;
+        width: 70%;
+        height: 70%;
 
         img {
+            width: 100%;
             height: 100%;
-            width: 80%;
             object-fit: cover;
-
-        }
-
-
-
-        .faq-img-2 {
-            position: absolute;
-            top: 100px;
-            left: 70px;
-            width: 70%;
-            height: 70%;
-
-            img {
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-            }
         }
     }
 }

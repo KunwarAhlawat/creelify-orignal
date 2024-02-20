@@ -75,6 +75,8 @@
             li {
                 list-style: none;
                 margin-bottom: 10px;
+                display: flex;
+                flex-direction: row;
 
                 i {
                     margin-right: 10px;

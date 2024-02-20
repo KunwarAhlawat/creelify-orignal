@@ -1,11 +1,11 @@
 //hero style
 .home-hero {
     position: relative;
-    background-image: url("https://flywebwp.websitelayout.net/wp-content/uploads/2023/09/slide-03.jpg");
+    background-image: url("https://creelify.com/wp-content/uploads/2024/02/creelify-bg-min-scaled.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
+    height: 800px;
     width: 100%;
     overflow: hidden;
 
@@ -28,24 +28,19 @@
         justify-content: center;
         align-items: center;
         color: $light;
+        padding: 0px 20px;
+
 
         span {
             display: block;
             line-height: 100%;
+            text-align: center;
+            font-size: 9rem;
+            font-weight: 800;
+        }
 
-            &:nth-child(1) {
-                font-size: 1.5rem;
-                letter-spacing: 2px;
-                margin-bottom: 20px;
-                /* Assuming $bold is defined elsewhere */
-            }
-
-            &:nth-child(2) {
-                text-align: center;
-                font-size: 9rem;
-                font-weight: 800;
-                /* Assuming $bold is defined elsewhere */
-            }
+        h6 {
+            text-align: center;
         }
 
         button {
@@ -61,19 +56,10 @@
             span {
                 display: block;
                 line-height: 100%;
+                text-align: center;
+                font-size: calc(9rem*0.7);
+                font-weight: 800;
 
-                &:nth-child(1) {
-                    font-size: calc(1.5rem*0.7);
-                    letter-spacing: 2px;
-                    /* Assuming $bold is defined elsewhere */
-                }
-
-                &:nth-child(2) {
-                    text-align: center;
-                    font-size: calc(9rem*0.7);
-                    font-weight: 800;
-                    /* Assuming $bold is defined elsewhere */
-                }
             }
 
             button {
