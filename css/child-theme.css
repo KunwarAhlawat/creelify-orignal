@@ -12966,6 +12966,10 @@ span {
   margin-top: 10px;
 }
 
+.service-hero .service-hero-text {
+  text-align: center;
+}
+
 .has-blue-color,
 .has-blue-color:visited {
   color: #0d6efd;
