@@ -1,5 +1,32 @@
-.service-hero{
-    .service-hero-text{
+.service-hero {
+    .service-hero-text+p {
         text-align: center;
+
+    }
+}
+
+.service-work {
+    .owl-carousel {
+        .item {
+            img {}
+        }
+    }
+}
+
+.service-why-us {
+    .why-us-area {
+        .why-us-item {
+            text-align: center;
+        }
+    }
+}
+
+.service-feature-area {
+    .feature-item {
+        text-align: center;
+    }
+
+    .feature-img {
+        img {}
     }
 }

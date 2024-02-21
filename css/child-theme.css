@@ -12966,10 +12966,17 @@ span {
   margin-top: 10px;
 }
 
-.service-hero .service-hero-text {
+.service-hero .service-hero-text + p {
   text-align: center;
 }
 
+.service-why-us .why-us-area .why-us-item {
+  text-align: center;
+}
+
+.service-feature-area .feature-item {
+  text-align: center;
+}
 .has-blue-color,
 .has-blue-color:visited {
   color: #0d6efd;
