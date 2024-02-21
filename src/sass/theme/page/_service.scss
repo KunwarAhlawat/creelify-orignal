@@ -1,32 +1,192 @@
-.service-hero {
-    .service-hero-text+p {
-        text-align: center;
-
+//hero section style
+.service-hero{
+    .hero-text {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     p{
+     width: 80%;
+     text-align: center;
     }
 }
+}
 
+//our work section style
 .service-work {
     .owl-carousel {
         .item {
-            img {}
+            height: 800px;
+            img {
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+              
+            } 
+        
         }
     }
 }
 
+
+//why choose us section style
 .service-why-us {
+   
+    .why-us-text{
+        text-align: center;
+       margin-bottom: 60px;
+        p{
+            text-align: center;   
+        }
+    }
+   
     .why-us-area {
-        .why-us-item {
+          .why-us-item {
+            text-align: center;
+            .icon-box{
+                display: inline-block;
+                padding: 16px;
+                border-radius: 50%;
+                background-color: $primary;
+                color: $light;
+                margin-bottom: 20px;
+                i{
+                    font-size: 30px;
+                }
+            }
+            p{
+                text-align: center;
+                font-size: $small-font;
+            }
+        }
+    }
+}
+
+
+//feature section style
+.service-feature-area {
+    .feature-text{
+      text-align: center;
+      margin-bottom: 60px;
+
+      p{
+        text-align: center;
+      }
+    }
+    .feature-item {
+        padding: 20px;
+        text-align: center;
+        .icon-box{
+            display: inline-block;
+            margin-bottom: 20px;
+            i{
+                font-size: 30px;
+                color: $accent;
+            }
+        }
+        p{
+            font-size: $small-font;
             text-align: center;
         }
-    }
-}
-
-.service-feature-area {
-    .feature-item {
-        text-align: center;
     }
 
     .feature-img {
         img {}
+    }
+}
+
+
+//benfit section style
+.service-benifit-area{
+.benifit-item-img{
+    img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+}
+.benifit-item-text{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    ul{
+      margin-left: 40px;
+      li{
+        margin-bottom: 10px;
+      }
+    }
+}
+
+}
+
+
+//testimonial section style
+.service-testimonial{
+    .testimonial-item{
+        padding: 20px;
+        text-align: center;
+        .auther-img{
+
+        }
+        p{
+            text-align: center;
+            width: 80%;
+            margin: auto;
+        }
+       h6{
+        margin: 20px 0px;
+       }
+       span{
+        color: $accent;
+       }
+       .review{
+        color:$accent ;
+        margin-top: 8px;
+       }
+
+    }
+}
+
+// pricing section style
+.service-pricing{
+    .pricing-text{
+        text-align: center;
+        p{
+            text-align: center;
+        }
+    }
+    .pricing-area{
+        margin-top: 50px;
+        padding: 40px 20px;
+        box-shadow: $shadow1;
+        border: $border1;
+        text-align: center;
+        .pricing-icon{
+            display: inline-block;
+                padding: 16px;
+                border-radius: 50%;
+                background-color: $primary;
+                color: $light;
+                margin-bottom: 20px;
+            i{
+                font-size: 30px;
+            }
+        }
+span{
+    font-size: 30px;
+    margin: 20px 0px;
+}
+        ul{ 
+            height: 200px;
+         
+            li{
+                display: block;
+                list-style: none;
+                margin-bottom: 10px;
+                
+            }
+        }
     }
 }

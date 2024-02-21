@@ -12966,17 +12966,153 @@ span {
   margin-top: 10px;
 }
 
-.service-hero .service-hero-text + p {
+.service-hero .hero-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.service-hero .hero-text p {
+  width: 80%;
   text-align: center;
 }
 
+.service-work .owl-carousel .item {
+  height: 800px;
+}
+.service-work .owl-carousel .item img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.service-why-us .why-us-text {
+  text-align: center;
+  margin-bottom: 60px;
+}
+.service-why-us .why-us-text p {
+  text-align: center;
+}
 .service-why-us .why-us-area .why-us-item {
   text-align: center;
 }
+.service-why-us .why-us-area .why-us-item .icon-box {
+  display: inline-block;
+  padding: 16px;
+  border-radius: 50%;
+  background-color: #1F2732;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+.service-why-us .why-us-area .why-us-item .icon-box i {
+  font-size: 30px;
+}
+.service-why-us .why-us-area .why-us-item p {
+  text-align: center;
+  font-size: 0.875rem;
+}
 
-.service-feature-area .feature-item {
+.service-feature-area .feature-text {
+  text-align: center;
+  margin-bottom: 60px;
+}
+.service-feature-area .feature-text p {
   text-align: center;
 }
+.service-feature-area .feature-item {
+  padding: 20px;
+  text-align: center;
+}
+.service-feature-area .feature-item .icon-box {
+  display: inline-block;
+  margin-bottom: 20px;
+}
+.service-feature-area .feature-item .icon-box i {
+  font-size: 30px;
+  color: #FF497C;
+}
+.service-feature-area .feature-item p {
+  font-size: 0.875rem;
+  text-align: center;
+}
+.service-benifit-area .benifit-item-img img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+.service-benifit-area .benifit-item-text {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+}
+.service-benifit-area .benifit-item-text ul {
+  margin-left: 40px;
+}
+.service-benifit-area .benifit-item-text ul li {
+  margin-bottom: 10px;
+}
+
+.service-testimonial .testimonial-item {
+  padding: 20px;
+  text-align: center;
+}
+.service-testimonial .testimonial-item p {
+  text-align: center;
+  width: 80%;
+  margin: auto;
+}
+.service-testimonial .testimonial-item h6, .service-testimonial .testimonial-item .h6 {
+  margin: 20px 0px;
+}
+.service-testimonial .testimonial-item span {
+  color: #FF497C;
+}
+.service-testimonial .testimonial-item .review {
+  color: #FF497C;
+  margin-top: 8px;
+}
+
+.service-pricing .pricing-text {
+  text-align: center;
+}
+.service-pricing .pricing-text p {
+  text-align: center;
+}
+.service-pricing .pricing-area {
+  margin-top: 50px;
+  padding: 40px 20px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border: 1px solid rgba(0, 0, 0, 0.09);
+  text-align: center;
+}
+.service-pricing .pricing-area .pricing-icon {
+  display: inline-block;
+  padding: 16px;
+  border-radius: 50%;
+  background-color: #1F2732;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+.service-pricing .pricing-area .pricing-icon i {
+  font-size: 30px;
+}
+.service-pricing .pricing-area span {
+  font-size: 30px;
+  margin: 20px 0px;
+}
+.service-pricing .pricing-area ul {
+  height: 200px;
+}
+.service-pricing .pricing-area ul li {
+  display: block;
+  list-style: none;
+  margin-bottom: 10px;
+}
+
 .has-blue-color,
 .has-blue-color:visited {
   color: #0d6efd;
